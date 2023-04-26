@@ -9,19 +9,31 @@
     <FrameLayout
         android:id="@+id/placeHolder"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:background="#D80909"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
 
-    <Button
-        android:id="@+id/buttonFragment"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="Open fragment"
+        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/placeHolder2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
